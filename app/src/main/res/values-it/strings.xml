@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">ardudodo</string>
     <string name="welcome">Benvenuto</string>
+    <string name="change_text">Cambia Testo</string>
+    <string name="change_text_hint">Change Text Hint</string>
 </resources>
