@@ -1,6 +1,7 @@
 package it.ardudodo.ardudodo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -13,9 +14,13 @@ import android.widget.TextView;
  */
 
 public class MainActivity extends Activity{
+
+    public static final String USERNAME_KEY = "username";
+
     TextView welcomeTextView;
     Button changeTextBtn;
     EditText changeTextEdit;
+    String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +35,11 @@ public class MainActivity extends Activity{
         changeTextBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                    welcomeTextView.setText(changeTextEdit.getText());
-
+                    //welcomeTextView.setText(changeTextEdit.getText());
+                username = changeTextEdit.getText().toString();
+                Intent intent = new Intent(getBaseContext(),SecondActivity.class);
+                intent.putExtra(USERNAME_KEY,username);
+                startActivity(intent);
             }
         });
     }

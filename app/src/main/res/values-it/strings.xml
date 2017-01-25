@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ardudodo</string>
+    <string name="app_name">ArduDodo</string>
     <string name="welcome">Benvenuto</string>
     <string name="change_text">Cambia Testo</string>
     <string name="change_text_hint">Change Text Hint</string>
